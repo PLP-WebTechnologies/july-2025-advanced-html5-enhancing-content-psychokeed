@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Mastered Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Exploring Advanced HTML5 Elements</h1>
+        <p>This page demonstrates lists, tables, media, and a fully-featured HTML5 form.</p>
+    </header>
+
+    <!-- LISTS -->
+    <section>
+        <h2>Popular Web Technologies</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+        </ul>
+
+        <h3>Steps to Become a Web Developer</h3>
+        <ol>
+            <li>Learn the basics of HTML, CSS, and JavaScript.</li>
+            <li>Understand responsive design principles.</li>
+            <li>Practice building projects.</li>
+            <li>Learn a front-end framework.</li>
+            <li>Master back-end technologies.</li>
+        </ol>
+    </section>
+
+    <!-- TABLE -->
+    <section>
+        <h2>Comparison of Web Technologies</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Type</th>
+                    <th>Primary Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Markup</td>
+                    <td>Structure of web pages</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Style</td>
+                    <td>Design and layout</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Programming</td>
+                    <td>Interactivity</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MEDIA -->
+    <section>
+        <h2>HTML5 Media Examples</h2>
+        <figure>
+            <img src="assets/image.jpeg" alt="Sample Image" width="300" height="300"  loading="lazy" >
+            <figcaption>An example image embedded using HTML5.</figcaption>
+        </figure>
+        <audio controls>
+            <source src="assets/audio.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- FORM -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="60" required>
+            </fieldset>
+
+            <!-- Account Info -->
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" title="5-15 characters, letters and numbers only">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="country">Select Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Choose One--</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="southafrica">SouthAfrica</option>
+                    <option value="Tanzania">Tanzania</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="subscribe" checked> Subscribe to Newsletter
+                </label>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Write about yourself"></textarea>
+            </fieldset>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Enhanced HTML5 Demo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
